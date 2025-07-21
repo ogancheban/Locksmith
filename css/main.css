@@ -83,21 +83,31 @@ ul li {
         
 }
 header {
-    position: absolute;
-        width: 100%;
-        z-index: 50;
-        top: 0;
-        left: 0;
+    
     width: 100%;
     background-color: black;
+    height: 100px;
+    
     
 
 }
 .headerrow {
     display: flex;
         justify-content: space-between;
-        align-items: center;
-        height: 100px;
+        align-items: center;    
         color: #FAFAFA;
         
+}
+.headerrow ul {
+    position: relative;
+    display: flex;
+}
+.headerrow ul li {
+    list-style: none;
+}
+.headerrow ul li a {
+    display: inline-block;
+    color:#FAFAFA;
+    margin-left: 40px;
+    text-decoration: none;
 }
