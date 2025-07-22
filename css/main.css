@@ -1,6 +1,10 @@
 
 /* asdasdasdasd */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 
 /* $minwidth:320px; */
 
@@ -74,6 +78,7 @@ ul li {
     min-height: 100%;
     font-display: column;
     margin: 0px auto;   
+    font-family: "Roboto", sans-serif;
 }
 .container {
     width: 1440px;
@@ -89,6 +94,7 @@ header {
     height: 100px;
     
     
+    
 
 }
 .headerrow {
@@ -96,8 +102,39 @@ header {
         justify-content: space-between;
         align-items: center;    
         color: #FAFAFA;
+        height: 100px;
         
 }
+
+
+/* Логотип */
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 0.8;
+    font-family: "Italianno", cursive;
+        font-weight: 400;
+        font-style: normal;
+}
+.logo-text .line1 {
+    color:#FAFAFA;
+    font-size: 24px;
+}
+.logo-text .line2 {
+    color: #FAFAFA;
+    font-size: 28px;
+}
+/* Конец Логотип */
+
 .headerrow ul {
     position: relative;
     display: flex;
@@ -110,4 +147,29 @@ header {
     color:#FAFAFA;
     margin-left: 40px;
     text-decoration: none;
+    font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-size: 14px;
 }
+.header-phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color:#FAFAFA;
+}
+.header-phone a {
+text-decoration: none;
+color:inherit;
+font-size: 20px;
+line-height: 26px;
+font-weight: 700;
+transition: color 0.3ms;
+}
+.header-phone a:hover {
+color: #ffffff;
+}
+.phone-icon {
+    width: 25px;
+} 
