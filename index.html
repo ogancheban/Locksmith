@@ -196,29 +196,61 @@
             </section>
         </main>
         <!-- підва (нижня частина сайту) -->
-        <footer>
-            <!-- обмежуючий контейнер -->
-            <div>
-                <!-- групування контенту -->
-                <div>
-                    <!-- інший контент -->
-                    <div>futer</div>
-                    <!-- додаткова навігація -->
+        <footer class="footer" id="footer">
+            <div class="flex container">
+                <div class="footer-about">
+                    <h5>About Stated</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam
+                        voluptatum
+                        autem.
+                        Amet aliquid nesciunt veritatis aliquam.</p>
+                </div>
+                <div class="footer-quick-links">
+                    <h5>Quick Links</h5>
                     <ul>
                         <li>
-                            <a href=""></а>
+                            <a data-goto=".full-screen" class="menu__link" href="#">About</a>
                         </li>
-                        <!-- ... -->
+                        <li>
+                            <a data-goto=".twoitem" class="menu__link" href="#">Production</a>
+                        </li>
+                        <li>
+                            <a data-goto=".priceblock" class="menu__link" href="#">Price</a>
+                        </li>
+                        <li>
+                            <a data-goto=".services" class="menu__link" href="#">Advantages</a>
+                        </li>
+                        <li>
+                            <a data-goto=".footer" class="menu__link" href="#">Contact Us</a>
+                        </li>
                     </ul>
                 </div>
-                <!-- групування контенту -->
-                <div>
-                    <!-- контактна інформація -->
-                    <address></address>
-                    <!-- інший контент -->
-                    <div></div>
+                <div class="footer-subscribe">
+                    <h5>Subscribe to our Newsletter</h5>
+                    <div id="subscribe-container">
+                        <form action="https://www.freecodecamp.com/email-submit" id="form">
+                            <input name="email" id="email" type="email" placeholder="Enter Email" required />
+                            <input class="right-rounded" id="submit" type="submit" value="Send">Send/>
+                        </form>
+
+                    </div>
+
+                    <h5 class="follow-us">Follow Us</h5>
+                    <ul>
+                        <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                    </ul>
                 </div>
             </div>
+            <div class="copyright">
+                <!-- <small>
+                    Copyright &copy; <span class="fa fa-heart"></span> by <a href="https://ogancheban.com">OganCheban</a>
+                </small>-->
+                <a href="https://ogancheban.com">2021 OganCheban</a>
+            </div>
+
         </footer>
         <!-- інший контент -->
     </div>
