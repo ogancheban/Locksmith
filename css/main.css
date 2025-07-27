@@ -356,16 +356,16 @@ height: 100px;
         left: 0;
     }
 
-    .menu__body::before {
+    /* .menu__body::before {
         content: "";
         position: fixed;
         width: 100%;
         top: 0;
         left: 0;
         height: 65px;
-        background-color: #FAFAFA;
+        background-color: #ef5454;
         z-index: 10;
-    }
+    } */
 
     .nav__link {
         flex-direction: column;
@@ -458,7 +458,7 @@ main {
  .hero-container {
      position: relative;
      width: 100%;
-     height: 100vh;
+     height: 75vh;
      overflow: hidden;
  }
 
@@ -478,7 +478,7 @@ main {
      left: 0;
      width: 100%;
      height: 100%;
-     background: rgba(0, 0, 0, 0.5);
+     background: rgba(0, 0, 0, 0.7);
      z-index: 1;
  }
 
@@ -522,7 +522,7 @@ main {
  }
 
  .btn-primary {
-     background-color: #ff9800;
+     background-color: #ff7700;
      color: white;
  }
 
@@ -556,7 +556,7 @@ main {
      }
  }
 
- .section-container {
+ .advantages {
      position: relative;
      width: 100%;
      overflow: hidden;
@@ -564,7 +564,7 @@ main {
      color: white;
  }
 
- .section-container img.background {
+ .advantages img.background {
      position: absolute;
      top: 0;
      left: 0;
@@ -580,26 +580,26 @@ main {
      left: 0;
      width: 100%;
      height: 100%;
-     background: rgba(0, 0, 0, 0.6);
+     background: rgba(250, 142, 142, 0);
      z-index: 1;
  }
 
- .section-content {
+ .advantages-content {
      position: relative;
      z-index: 2;
      max-width: 1000px;
      margin: auto;
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-     gap: 30px;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     gap: 20px;
  }
 
  .feature-box {
      display: flex;
      align-items: center;
-     padding: 20px;
-     background-color: rgba(255, 255, 255, 0.1);
-     border-radius: 8px;
+     padding: 10px;
+     /* background-color: rgba(10, 1, 1, 0.9);
+     border-radius: 8px; */
      transition: transform 0.3s ease;
  }
 
@@ -612,17 +612,25 @@ main {
      height: 40px;
      margin-right: 15px;
      flex-shrink: 0;
-     fill: #ffc107;
+     fill: #ffffff;
  }
 
  .feature-text {
-     font-size: 1.1rem;
+     font-size: 1.2rem;
      font-weight: bold;
+     color:#000;
  }
 
- @media (max-width: 768px) {
-     .section-content {
+ @media (max-width: 920px) {
+     .advantages-content {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+     }
+ }
+ @media (max-width: 600px) {
+     .advantages-content {
          grid-template-columns: 1fr;
+         justify-content: center;
      }
  }
 
