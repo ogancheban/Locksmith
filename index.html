@@ -30,8 +30,14 @@
                         </div>
                     </div>
 
+                    <!-- старове меню - потом удалить -->
 
-                    <nav class="main-menu">
+                    <!-- <nav class="main-menu" id="main-menu">
+
+                        <div class="nav-mobile">
+                            <span></span>
+                        </div>
+
                         <ul>
                             <li>
                                 <a href="">Home</а>
@@ -48,7 +54,36 @@
 
 
                         </ul>
+                    </nav> -->
+                    <!-- тест меню с bee -->
+                    <nav class="nav-bar" id="nav-bar">
+                        <div class="nav-mobile">
+                            <span></span>
+                        </div>
+                        <nav class="menu__body">
+                            <ul class="nav__link" id="nav-link">
+                                <li>
+                                    <a data-goto=".full-screen" class="menu__link nav-link" href="#full-screen">Home</a>
+                                </li>
+                                <li>
+                                    <a data-goto=".twoitem" class="menu__link nav-link" href="#twoitem">Services</a>
+                                </li>
+                                <li>
+                                    <a data-goto=".priceblock" class="menu__link nav-link" href="#priceblock">How It
+                                        Works</a>
+                                </li>
+                                <li>
+                                    <a data-goto=".services" class="menu__link nav-link" href="#services">Service
+                                        Areas</a>
+                                </li>
+
+                            </ul>
+                        </nav>
+
+
                     </nav>
+
+                    <!-- конец меню с bee -->
 
                     <!-- header phone -->
                     <div class="header-phone">
@@ -62,8 +97,6 @@
                     <!-- конец кнопка контактна -->
 
                 </div>
-                <!-- відкриття меню -->
-                <button></button>
 
             </div>
         </header>
@@ -71,14 +104,66 @@
         <!-- основний контент -->
         <main>
             <!-- секція -->
+            <section class="hero-container">
+                <img src="/img/heropic.png" alt="Фоновое изображение">
+                <div class="overlay"></div>
+                <div class="hero-content">
+                    <h1>Locked Out of Your Car?</h1>
+                    <p>24/7 emergency auto locksmith services. Fast response, professional technicians, and competitive
+                        rates.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary">Emergency Service</button>
+                        <button class="btn-secondary">Request Service</button>
+                    </div>
+                </div>
+            </section>
+
+
             <section>
+                <section class="section-container">
+                    <img src="background-image.jpg" alt="Фоновое изображение" class="background">
+                    <div class="section-overlay"></div>
+                    <div class="section-content">
+                        <div class="feature-box">
+                            <svg class="feature-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M5 4h14a2 2 0 012 2v2H3V6a2 2 0 012-2zm-2 6h18v10a2 2 0 01-2 2H5a2 2 0 01-2-2V10zm7 3v4h4v-4h-4z" />
+                            </svg>
+                            <span class="feature-text">Licensed</span>
+                        </div>
+                        <div class="feature-box">
+                            <svg class="feature-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C7.6 4.6 3 6 3 11v6c0 .9.6 1.7 1.5 2 .2.1.3.1.5.1h14c.2 0 .3 0 .5-.1.9-.3 1.5-1.1 1.5-2v-6c0-5-4.6-6.4-9-9z" />
+                            </svg>
+                            <span class="feature-text">Insured</span>
+                        </div>
+                        <div class="feature-box">
+                            <svg class="feature-icon" viewBox="0 0 24 24">
+                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14l4-4h12c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" />
+                            </svg>
+                            <span class="feature-text">Certified</span>
+                        </div>
+                        <div class="feature-box">
+                            <svg class="feature-icon" viewBox="0 0 24 24">
+                                <path d="M12 4a8 8 0 100 16 8 8 0 000-16zm1 9h4v2h-6V7h2v6z" />
+                            </svg>
+                            <span class="feature-text">24/7 Service</span>
+                        </div>
+                    </div>
+                </section>
+
                 <!-- обмежуючий контейнер -->
                 <div>
                     <!-- заголовок секції -->
-                    <h1></h1>
+                    <h1>h1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis qui et aperiam
+                        corporis minima omnis delectus optio tempore nesciunt, molestiae aut sed minus itaque eveniet
+                        quo similique voluptate animi alias.</h1>
                     <!-- текст -->
-                    <p></p>
-                    <!-- або -->
+                    <p>p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus similique quibusdam eaque
+                        ipsum molestiae commodi aut numquam. Laudantium veniam blanditiis laborum quaerat hic cum
+                        accusamus repellat quas nemo, eum distinctio?/p>
+                        <!-- або -->
                     <div></div>
                 </div>
             </section>
@@ -126,7 +211,7 @@
                 <!-- групування контенту -->
                 <div>
                     <!-- інший контент -->
-                    <div></div>
+                    <div>futer</div>
                     <!-- додаткова навігація -->
                     <ul>
                         <li>
@@ -146,7 +231,7 @@
         </footer>
         <!-- інший контент -->
     </div>
-
+    <script src="/js/main.js"></script>
 </body>
 
 
