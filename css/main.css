@@ -633,7 +633,34 @@ main {
          justify-content: center;
      }
  }
+/* gallery */
+.gallery-items {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.gallery-item {
+    position: relative;
+    padding: 0px 0px 85% 0px;
+    border-radius: 20px;
+}
+.gallery-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.gallery-item-l {
+    grid-row: span 2;
+}
+.gallery-item-l2 {
+    grid-column: span 2;
+}
 
+
+/* end gallery */
 footer {
     position: relative;
     z-index: 5;
