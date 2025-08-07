@@ -655,9 +655,118 @@ main {
 .gallery-item-l {
     grid-row: span 2;
 }
-.gallery-item-l2 {
-    grid-column: span 2;
+
+
+
+
+.services {
+    margin: 40px auto;
+    text-align: center;
+    padding: 0 20px;
 }
+
+
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+
+
+.subtitle {
+
+    font-size: 16px;
+
+    color: #ccc;
+
+    margin-bottom: 40px;
+
+}
+
+
+
+.grid {
+    display: grid;
+
+    grid-template-rows: repeat(6, minmax(100px, 1fr));
+    grid-template-columns: repeat(8, minmax(100px, 1fr));
+grid-template-areas: 
+"b1 b1 l1 l1 l2 l2 b2 b2"
+"b1 b1 l1 l1 l2 l2 b2 b2"
+"b1 b1 l3 l3 l4 l4 b2 b2"
+"b1 b1 l3 l3 l4 l4 b2 b2"
+"b3 b3 b3 b4 b4 b4 l5 l5"
+"b3 b3 b3 b4 b4 b4 l5 l5";
+    gap: 15px;
+}
+.b1 {grid-area: b1;}
+.b2 {
+    grid-area: b2;
+}
+.b3 {
+    grid-area: b3;
+}
+.b4 {
+    grid-area: b4;
+}
+.l1 {
+    grid-area: l1;
+}.l2 {
+    grid-area: l2;
+}.l3 {
+    grid-area: l3;
+}.l4 {
+    grid-area: l4;
+}.l5 {
+    grid-area: l5;
+}
+
+.card {
+
+    background-color: #1e1e1e;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+    transition: transform 0.3s ease;
+
+}
+
+
+
+.card:hover {
+
+    transform: scale(1.03);
+
+}
+
+
+
+.card img {
+
+    width: 100%;
+
+    height: 150px;
+
+    object-fit: cover;
+
+}
+
+
+
+.card h3 {
+
+    padding: 15px;
+
+    font-size: 16px;
+
+}
+
+
 
 
 /* end gallery */
