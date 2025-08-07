@@ -701,7 +701,7 @@ position: relative;
 
     font-size: 16px;
 
-    color: #ccc;
+    color: #fafafa;
 
     margin-bottom: 40px;
 
@@ -758,11 +758,15 @@ grid-template-areas:
 
 }
 .card-desc {
-    position: absolute;
-    top: 20%;
-    left: 50%;
+    position: relative;
+   margin-top: 50px;
     z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
+
 
 
 .card:hover {
