@@ -747,6 +747,7 @@ grid-template-areas:
 
 .card {
     position: relative;
+    min-width: 100px;
 
     border-radius: 10px;
 
@@ -758,12 +759,12 @@ grid-template-areas:
 
 }
 .card-desc {
-    position: relative;
-   margin-top: 50px;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 150px;
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: translate(-50%, -50%);
+
     
 }
 
@@ -786,6 +787,9 @@ width: 100%;
 }
 .card h3 {
     color: white;
+       
+        
+ 
 }
 
 
