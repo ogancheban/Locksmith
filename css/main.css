@@ -688,6 +688,7 @@ position: relative;
     overflow: hidden;
     padding: 60px 20px;
     background-color: #000000;
+    height: 80vh;
 }
 
 
@@ -747,7 +748,7 @@ grid-template-areas:
 
 .card {
     position: relative;
-    min-width: 100px;
+   
 
     border-radius: 10px;
 
@@ -759,13 +760,13 @@ grid-template-areas:
 
 }
 .card-desc {
-    width: 150px;
-     position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transition: translate(-50%, -50%);
-
+    transform: translate(-50%, -50%); 
     
+    padding: 10px;
+    white-space: nowrap;
 }
 
 
@@ -783,7 +784,8 @@ width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0;
+    display: block;
+   
 }
 .card h3 {
     color: white;
@@ -791,9 +793,74 @@ width: 100%;
         
  
 }
+/* --- Мобильная адаптация --- */
+@media (max-width: 950px) {
+    .services {
+           
+            height: auto;
+        }
+    .grid {
+            grid-template-areas: none;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: auto;
+        }
+    
+        /* Сбрасываем привязку к областям */
+        .grid>* {
+            grid-area: unset;
+        }
+    
+        /* Устанавливаем порядок вывода */
+        .b1 {
+            order: 1;
+        }
+    
+        .l1 {
+            order: 2;
+        }
+    
+        .l2 {
+            order: 3;
+        }
+    
+        .b2 {
+            order: 4;
+        }
+    
+        .l3 {
+            order: 5;
+        }
+    
+        .l4 {
+            order: 6;
+        }
+    
+        .b3 {
+            order: 7;
+        }
+    
+        .b4 {
+            order: 8;
+        }
+    
+        .l5 {
+            order: 9;
+        }
+    
+        /* Сохраняем красивую пропорцию */
+        .card {
+            aspect-ratio: 4 / 3;
+        }
+}
 
-
-
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+         .card {
+             aspect-ratio: 16 / 9;
+         }
+}
 
 /* end gallery */
 footer {
