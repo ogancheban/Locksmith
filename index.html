@@ -13,93 +13,52 @@
 <body>
     <div class="wrapper">
         <!-- шапка (заголовок) сайту -->
-        <header>
-            <!-- обмежуючий контейнер -->
+
+        <header class="header">
             <div class="container">
-                <!-- логотип -->
-                <div class="headerrow">
-                    <div class="logo">
-                        <img src="img/PicLogo.png" alt="">
-                        <div class="logo-text">
-                            <span class="line1">
-                                Auto
-                            </span>
-                            <span class="line2">
-                                Locksmith
-                            </span>
-                        </div>
+                <div class="logo">
+                    <img src="img/PicLogo.png" alt="">
+                    <div class="logo-text">
+                        <span class="line1">
+                            Auto
+                        </span>
+                        <span class="line2">
+                            Locksmith
+                        </span>
                     </div>
-
-                    <!-- старове меню - потом удалить -->
-
-                    <!-- <nav class="main-menu" id="main-menu">
-
-                        <div class="nav-mobile">
-                            <span></span>
-                        </div>
-
-                        <ul>
-                            <li>
-                                <a href="">Home</а>
-                            </li>
-                            <li>
-                                <a href="">Services</а>
-                            </li>
-                            <li>
-                                <a href="">How It Works</а>
-                            </li>
-                            <li>
-                                <a href="">Service Areas</а>
-                            </li>
-
-
-                        </ul>
-                    </nav> -->
-                    <!-- тест меню с bee -->
-                    <nav class="nav-bar" id="nav-bar">
-                        <div class="nav-mobile">
-                            <span></span>
-                        </div>
-                        <nav class="menu__body">
-                            <ul class="nav__link" id="nav-link">
-                                <li>
-                                    <a data-goto=".full-screen" class="menu__link nav-link" href="#full-screen">Home</a>
-                                </li>
-                                <li>
-                                    <a data-goto=".twoitem" class="menu__link nav-link" href="#twoitem">Services</a>
-                                </li>
-                                <li>
-                                    <a data-goto=".priceblock" class="menu__link nav-link" href="#priceblock">How It
-                                        Works</a>
-                                </li>
-                                <li>
-                                    <a data-goto=".services" class="menu__link nav-link" href="#services">Service
-                                        Areas</a>
-                                </li>
-
-                            </ul>
-                        </nav>
-
-
-                    </nav>
-
-                    <!-- конец меню с bee -->
-
-                    <!-- header phone -->
-                    <div class="header-phone">
-                        <img src="/img/phoneicon.svg" alt="Header phone" class="phone-icon">
-                        <a href="tel:+19165109429">916-510-94-29</a>
-                    </div>
-                    <!-- кнопка контактна -->
-                    <a href="#contact" class="contact-button">Contact Us</a>
-
-
-                    <!-- конец кнопка контактна -->
-
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Service Areas</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="header-phone">
+                    <img src="/img/phoneicon.svg" alt="Header phone" class="phone-icon">
+                    <a href="tel:+19165109429">916-510-94-29</a>
                 </div>
 
+
+                <!-- кнопка контактна -->
+                <a href="#contact" class="contact-button">Contact Us</a>
+
+                <div class="burger">
+                    <span id="menu-icon" class="menu-icon">&#9776;</span>
+                    <span id="close-menu" class="close-menu">&times;</span>
+                </div>
+                <nav class="mobile-menu" id="mobile-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Service Areas</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
+
 
         <!-- основний контент -->
         <main>
