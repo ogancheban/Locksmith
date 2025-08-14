@@ -4,8 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-
 /* $minwidth:320px; */
 
 * {
@@ -14,7 +12,6 @@
     margin: 0px;
     border: 0px
 }
-
 *,*:before,*:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -31,44 +28,34 @@ a:focus,
 :active {
     outline: none;
 }
-
 a,
 a:visited {
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: none;
 }
-
 ul li {
     list-style: none;
 }
-
 html,
 body {
     margin: 0;
-        padding: 0;
-        height: 100%;
+    padding: 0;
+    height: 100%;
     min-width: 320px;
-}
-body {
-   
 }
 a:focus,
 :active {
     outline: none;
 }
-
 a,
 a:visited {
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: none;
 }
-
 ul li {
     list-style: none;
 }
@@ -80,22 +67,20 @@ h3 {
     font-size: clamp(0.8rem, 1.5vw, 1.4rem);
 }
 p {
-    font-size: 1rem;
-      
+    font-size: 1rem;     
 }
 .section-title {
     position: relative;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        text-align: center;
-        color: white;
-        padding: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    color: white;
+    padding: 20px;
 }
-
 .wrapper {
     display: flex;
     overflow: hidden;
@@ -104,10 +89,8 @@ p {
     margin: 0px auto;   
     font-family: "Roboto", sans-serif;
     flex-direction: column;
-        min-height: 100vh;
+    min-height: 100vh;
 }
-
-
 .container {
     margin: 0 auto;
     max-width: 1440px;
@@ -118,14 +101,12 @@ p {
     justify-content: space-between;
     padding: 0px 15px;
 }
-
 /* Header */
 .header {
     padding: 10px 20px;
     background: #000000;
     color: #fff;
 }
-
 /* Логотип */
 .logo {
     display: flex;
@@ -133,13 +114,11 @@ p {
     justify-content: left;
     flex: 0 1 15%;
 }
-
 .logo img {
     width: 50px;
     height: auto;
     margin-right: 10px;
 }
-
 .logo-text {
     display: flex;
     flex-direction: column;
@@ -148,23 +127,19 @@ p {
     font-weight: 400;
     font-style: normal;
 }
-
 .logo-text .line1 {
     color: #FAFAFA;
     font-size: clamp(14px, 1.5vw, 24px);
 }
-
 .logo-text .line2 {
     color: #FAFAFA;
     font-size: clamp(16px, 1.5vw, 28px);
 }
-
 .nav {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-
 .nav ul {
     display: flex;
     list-style: none;
@@ -172,18 +147,15 @@ p {
     padding: 0;
     margin: 0;
 }
-
 .nav a {
     text-decoration: none;
     color: #fff;
     font-size: clamp(14px, 1.5vw, 18px);
 }
-
 .nav li a:hover {
     border-bottom: 2px solid #FAFAFA;
     font-weight: 600;
 }
-
 .header-phone {
     display: flex;
     align-items: center;
@@ -192,7 +164,6 @@ p {
     color: #FAFAFA;
     margin-left: 10px;
 }
-
 .header-phone a {
     text-decoration: none;
     color: inherit;
@@ -201,15 +172,12 @@ p {
     font-weight: 400;
     transition: color 0.3ms;
 }
-
 .header-phone a:hover {
     color: #ffffff;
 }
-
 .phone-icon {
     width: 25px;
 }
-
 .btn {
     background: #ff9800;
     color: #fff;
@@ -219,7 +187,6 @@ p {
     font-size: clamp(14px, 1.5vw, 18px);
     display: inline-block;
 }
-
 .contact-button {
     background-color: #fff;
     color: #000;
@@ -232,24 +199,20 @@ p {
     box-shadow: 0px 0px 48px -22px rgba(255, 255, 255, 0.3);
     transition: background-color 0.3s;
 }
-
 .contact-button:hover {
     background-color: #FAFAFA;
     transform: scale(1);
 }
-
 .burger {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-
 .menu-icon {
     display: none;
     font-size: 28px;
     cursor: pointer;
 }
-
 /* Мобильное меню */
 .mobile-menu {
     position: fixed;
@@ -267,23 +230,19 @@ p {
     display: block;
     /* всегда block, управляем видимостью через opacity */
 }
-
 .mobile-menu.open {
     opacity: 0.85;
     transform: translateY(0);
     pointer-events: auto;
 }
-
 .mobile-menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-
 .mobile-menu li {
     border-bottom: 1px solid #444;
 }
-
 .mobile-menu a {
     display: block;
     padding: 14px 20px;
@@ -291,11 +250,9 @@ p {
     color: #fff;
     font-size: clamp(16px, 3vw, 20px);
 }
-
 .mobile-menu a:hover {
     background: #444;
 }
-
 .menu-icon,
 .close-menu {
     display: none;
@@ -305,7 +262,6 @@ p {
     cursor: pointer;
     z-index: 1001;
 }
-
 /* Показывать только на мобильных */
 
 /* Скрывать на десктопе */
@@ -320,47 +276,38 @@ p {
         margin-top: 30px;
         /* расстояние от header */
     }
-
     .mobile-menu li {
         width: 100%;
         text-align: center;
         margin-bottom: 20px;
     }
-
     .mobile-menu a {
         justify-content: center;
         text-align: center;
         font-size: 1.5rem;
         padding: 24px 20px;
     }
-
     .menu-icon,
     .close-menu {
         display: block;
     }
-
     .nav,
     .contact-button {
         display: none;
     }
-
     .container {
         gap: 15px;
     }
 }
-
 @media (min-width: 769px) {
-
     .menu-icon,
     .close-menu {
         display: none !important;
     }
 }
-
 main {
     flex: 1;
-    /* Занимает всё оставшееся пространство */
-   
+    /* Занимает всё оставшееся пространство */  
     background: #f1f1f1;
 }
  .hero-container {
@@ -369,7 +316,6 @@ main {
      height: 75vh;
      overflow: hidden;
  }
-
  .hero-container img {
      width: 100%;
      height: 100%;
@@ -379,7 +325,6 @@ main {
      left: 0;
      z-index: 0;
  }
-
  .overlay {
      position: absolute;
      top: 0;
@@ -389,7 +334,6 @@ main {
      background: rgba(0, 0, 0, 0.7);
      z-index: 1;
  }
-
  .hero-content {
      position: relative;
      z-index: 2;
@@ -402,24 +346,20 @@ main {
      color: white;
      padding: 20px;
  }
-
  .hero-content h1 {
      font-size: 3rem;
      margin-bottom: 1rem;
  }
-
  .hero-content p {
      font-size: 1.2rem;
      margin-bottom: 2rem;
  }
-
  .hero-buttons {
      display: flex;
      gap: 15px;
      flex-wrap: wrap;
      justify-content: center;
  }
-
  .hero-buttons button {
      padding: 12px 24px;
      font-size: 1rem;
@@ -428,42 +368,34 @@ main {
      cursor: pointer;
      transition: background 0.3s ease;
  }
-
  .btn-primary {
      background-color: #ff7700;
      color: white;
  }
-
  .btn-primary:hover {
      background-color: #e68900;
  }
-
  .btn-secondary {
      background-color: transparent;
      border: 2px solid white;
      color: white;
  }
-
  .btn-secondary:hover {
      background-color: white;
      color: black;
  }
-
  @media (max-width: 768px) {
      .hero-content h1 {
          font-size: 2rem;
      }
-
      .hero-content p {
          font-size: 1rem;
      }
-
      .hero-buttons {
          flex-direction: column;
          gap: 10px;
      }
  }
- 
 /* секция advantages */
  .advantages {
      position: relative;
