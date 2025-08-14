@@ -468,7 +468,8 @@ main {
          gap: 10px;
      }
  }
-
+ 
+/* секция advantages */
  .advantages {
      position: relative;
      width: 100%;
@@ -476,7 +477,6 @@ main {
      padding: 60px 20px;
      color: white;
  }
-
  .advantages img.background {
      position: absolute;
      top: 0;
@@ -503,7 +503,7 @@ main {
      max-width: 1000px;
      margin: auto;
      display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
      gap: 20px;
  }
 
@@ -541,10 +541,12 @@ main {
      }
  }
  @media (max-width: 600px) {
-     .advantages-content {
-         grid-template-columns: 1fr;
-         justify-content: center;
-     }
+    .advantages-content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    .advantages {
+    padding: 30px 10px;
+    min-height: 200px;}
  }
 /* gallery */
 .gallery-items {
@@ -573,14 +575,19 @@ main {
 
 
 .services {
-position: relative;
+    position: relative;
     width: 100%;
     /* overflow: hidden; */
     padding: 40px 20px;
     background-color: #000000;
     height: 90vh;
 }
-
+.servises-body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 auto;
+}
 
 
 .services h2 {
