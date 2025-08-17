@@ -966,6 +966,223 @@ width: 100%;
 }
 
 /* end gallery */
+
+/* form contact us */
+:root {
+    --bg: #0f172a;
+    /* тёмный синий фон секции */
+    --card: #111827;
+    /* карточки/форма */
+    --text: #e5e7eb;
+    /* основной текст */
+    --muted: #9ca3af;
+    /* вторичный текст */
+    --brand: #4f46e5;
+    /* акцент/кнопка */
+    --brand-hover: #4338ca;
+    --stroke: #1f2937;
+    --radius: 14px;
+}
+
+/* body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: #0b1020;
+    color: #fff;
+} */
+
+.contact-wrap {
+    background: var(--bg);
+    padding: clamp(32px, 4vw, 60px) 16px;
+}
+
+.container-contact {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: clamp(20px, 3vw, 40px);
+    align-items: stretch;
+}
+
+/* Левая колонка */
+.info {
+    /* background: linear-gradient(180deg, #0e142a 0%, #0a0f22 100%); */
+    background: linear-gradient(180deg, #000000 0%, #050812 100%);
+    border: 1px solid var(--stroke);
+    border-radius: var(--radius);
+    padding: clamp(20px, 3vw, 32px);
+}
+
+.info h2 {
+    margin: 0 0 6px 0;
+    font-size: clamp(24px, 3vw, 32px);
+    line-height: 1.2;
+    color: var(--text);
+}
+
+.info p.subtitle {
+    margin: 0 0 20px 0;
+    color: var(#fafafa);
+    font-size: 15px;
+}
+
+.contact-list {
+    display: grid;
+    gap: 14px;
+    margin-top: 10px;
+}
+
+.contact-item {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 12px;
+    border: 1px solid var(--stroke);
+    border-radius: 12px;
+    background: #000000;
+}
+
+.icon {
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    background: #141b36;
+    border: 1px solid #1e264b;
+}
+
+.contact-item .label {
+    font-size: 12px;
+    color: var(#fafafa --muted);
+    margin-bottom: 2px;
+}
+
+.contact-item .value a,
+.contact-item .value {
+    color: var(--text);
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.contact-item .value a:hover {
+    text-decoration: underline;
+}
+
+/* Правая колонка — форма */
+.form-card {
+    background: var(--card);
+    border: 1px solid var(--stroke);
+    border-radius: var(--radius);
+    padding: clamp(20px, 3vw, 28px);
+    display: grid;
+    gap: 14px;
+}
+
+.form-title {
+    margin: 0 0 4px 0;
+    font-size: clamp(18px, 2.5vw, 22px);
+    color: var(--text);
+}
+
+.form-desc {
+    margin: 0 0 12px 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.field {
+    display: grid;
+    gap: 6px;
+}
+
+.field label {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #243044;
+    background: #0f1729;
+    color: var(--text);
+    font-size: 14px;
+    outline: none;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+    color: #6b7280;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    border-color: #334155;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, .25);
+}
+
+.actions {
+    margin-top: 6px;
+}
+
+.btn {
+    appearance: none;
+    display: inline-block;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-weight: 600;
+    background: var(--brand);
+    color: white;
+    cursor: pointer;
+    transition: transform .06s ease, background .2s ease;
+    width: 100%;
+}
+
+.btn:hover {
+    background: var(--brand-hover);
+}
+
+.btn:active {
+    transform: translateY(1px) scale(.99);
+}
+
+.status {
+    min-height: 20px;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.status.success {
+    color: #34d399;
+}
+
+.status.error {
+    color: #f87171;
+}
+
+/* Адаптив */
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .actions .btn {
+        width: 100%;
+    }
+}
+
+
+/* end form contact us */
+
 footer {
     position: relative;
     z-index: 5;

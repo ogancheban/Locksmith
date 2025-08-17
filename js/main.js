@@ -44,3 +44,40 @@ document.addEventListener("keydown", (e) => {
     document.body.style.overflow = "";
   }
 });
+ // Примитивная фронтовая проверка + фейковая "отправка"
+    const form = document.getElementById('contactForm');
+    const status = document.getElementById('formStatus');
+
+    function validateEmail(v){
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+    }
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      status.className = 'status';
+      status.textContent = '';
+
+      const data = new FormData(form);
+      const fullName = data.get('fullName')?.trim();
+      const phone = data.get('phone')?.trim();
+      const email = data.get('email')?.trim();
+      const service = data.get('service');
+      const message = data.get('message')?.trim();
+
+      if(!fullName || !phone || !email || !service || !message){
+        status.classList.add('error');
+        status.textContent = 'Пожалуйста, заполните все поля.';
+        return;
+      }
+      if(!validateEmail(email)){
+        status.classList.add('error');
+        status.textContent = 'Похоже, email указан некорректно.';
+        return;
+      }
+
+      // Здесь обычно отправляем на сервер (fetch/axios).
+      // Для демо просто покажем успех и очистим форму.
+      status.classList.add('success');
+      status.textContent = 'Спасибо! Сообщение отправлено. Мы свяжемся с вами в ближайшее время.';
+      form.reset();
+    });
