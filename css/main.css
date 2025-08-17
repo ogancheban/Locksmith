@@ -1007,8 +1007,7 @@ width: 100%;
 
 /* Левая колонка */
 .info {
-    /* background: linear-gradient(180deg, #0e142a 0%, #0a0f22 100%); */
-    background: linear-gradient(180deg, #000000 0%, #050812 100%);
+    background: linear-gradient(180deg, #0e142a 0%, #0a0f22 100%);
     border: 1px solid var(--stroke);
     border-radius: var(--radius);
     padding: clamp(20px, 3vw, 32px);
@@ -1023,7 +1022,7 @@ width: 100%;
 
 .info p.subtitle {
     margin: 0 0 20px 0;
-    color: var(#fafafa);
+    color: var(--muted);
     font-size: 15px;
 }
 
@@ -1041,7 +1040,7 @@ width: 100%;
     padding: 12px 12px;
     border: 1px solid var(--stroke);
     border-radius: 12px;
-    background: #000000;
+    background: #0c1226;
 }
 
 .icon {
@@ -1056,7 +1055,7 @@ width: 100%;
 
 .contact-item .label {
     font-size: 12px;
-    color: var(#fafafa --muted);
+    color: var(--muted);
     margin-bottom: 2px;
 }
 
