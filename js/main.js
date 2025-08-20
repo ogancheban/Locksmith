@@ -81,3 +81,10 @@ document.addEventListener("keydown", (e) => {
       status.textContent = 'Спасибо! Сообщение отправлено. Мы свяжемся с вами в ближайшее время.';
       form.reset();
     });
+    function callNow() {
+  window.location.href = 'tel:555-55-55';
+}
+
+function sendMessage() {
+  window.location.href = 'sms:555-55-55';
+}
